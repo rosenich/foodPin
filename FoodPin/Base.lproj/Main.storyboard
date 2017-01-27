@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="h5i-Pn-IE3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="h5i-Pn-IE3" customClass="RestaurantTableViewCell" customModule="FoodPin" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h5i-Pn-IE3" id="4Gx-JI-vOj">
@@ -25,11 +25,16 @@
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q0l-oS-2C4">
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4MN-dC-LbN">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4MN-dC-LbN">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="60" id="N5s-ad-fIf"/>
                                                         <constraint firstAttribute="width" constant="60" id="Yls-oV-aur"/>
                                                     </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="30"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="M11-DI-dr4">
                                                     <subviews>
@@ -60,6 +65,12 @@
                                         <constraint firstItem="q0l-oS-2C4" firstAttribute="top" secondItem="4Gx-JI-vOj" secondAttribute="topMargin" constant="2" id="mM9-2s-jr6"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="locationLabel" destination="0v5-N5-Pec" id="eu3-2n-6aN"/>
+                                    <outlet property="nameLabel" destination="BUG-xr-i3a" id="qXU-mI-n9s"/>
+                                    <outlet property="thumbnailImageView" destination="4MN-dC-LbN" id="fHQ-1T-t4l"/>
+                                    <outlet property="typeLabel" destination="ozi-AH-e80" id="IFr-VI-fFU"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
