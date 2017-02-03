@@ -27,8 +27,8 @@
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4MN-dC-LbN">
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="N5s-ad-fIf"/>
-                                                        <constraint firstAttribute="width" constant="60" id="Yls-oV-aur"/>
+                                                        <constraint firstAttribute="height" constant="60" id="Iwd-pM-4ue"/>
+                                                        <constraint firstAttribute="width" constant="60" id="R1Y-Rg-vrb"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -81,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="muF-Xy-mlD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162" y="68"/>
+            <point key="canvasLocation" x="160.80000000000001" y="67.916041979010501"/>
         </scene>
     </scenes>
 </document>
