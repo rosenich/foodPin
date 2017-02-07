@@ -51,6 +51,7 @@ class RestaurantTableViewController: UITableViewController {
             
             let cell = tableView.cellForRow(at: indexPath)
             cell?.accessoryType = .checkmark
+            self.restaurantIsVisited[indexPath.row] = true
         })
         optionMenu.addAction(checkInAction)
         
@@ -72,6 +73,12 @@ class RestaurantTableViewController: UITableViewController {
         cell.locationLabel.text = restaurantLocations [indexPath.row]
         cell.typeLabel.text = restaurantTypes [indexPath.row]
         cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
+        
+        if restaurantIsVisited[indexPath.row] {
+            cell.accessoryType = .checkmark
+        } else {
+            cell.accessoryType = .none
+        }
                 return cell
     }
     
